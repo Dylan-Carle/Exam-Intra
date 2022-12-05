@@ -1,0 +1,86 @@
+/*
+    CSS pour examen Intra
+    remise a zéro additionel
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Importation de la police de caractère spaceAge  */
+@font-face {
+    font-family: spaceAge;
+    src: url('../Polices/spaceAge.ttf');
+}
+
+/*  Conteneur   */
+body{
+    background-color: black;
+}
+#global{
+    width: 890px;
+    margin: 20px auto;
+
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: spaceAge;
+    padding: 20px 20px;
+}
+#global div{
+    display: flex;
+    align-items: flex-start;
+}
+nav{
+    height: 142px;
+    width: 425px;
+    margin-right: 50px;
+    text-align: right;
+}
+article{
+    width: 360px;
+    margin: 30px 0;
+    margin-left: 50px;
+}
+header, #global div, footer{
+    border: 5px solid teal;
+    /*    Bodure arrondie    */
+    -webkit-border-radius: 100px 100px;
+    border-radius: 100px 100px;
+    background-image: url('../Images/points.png');
+}
+
+/*  Contenu  */
+footer img{
+    margin: 20px 0;
+}
+nav h1{
+    font-size: 3em;
+}
+nav h1::first-letter{
+    font-weight: bolder;
+    font-size: 2em;
+}
+p{
+    padding-top: 10px;
+}
+
+/*  Listes  */
+ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    padding-left: 150px;
+    padding-top: 5px;
+}
+nav ol li{
+    color: teal;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
